@@ -18,11 +18,13 @@ class App < Sinatra::Base
     # needs to get 200 Code
     # display a 'goodbye' and a name
     # is not hard-coded
+    erb :goodbye
   end
 
   get '/multiply/:num1/:num2' do
     # gets a 200 status Code
     # displays the product of the two numbers in the route
     # is not hard-coded
+    erb :multiply
   end
 end
