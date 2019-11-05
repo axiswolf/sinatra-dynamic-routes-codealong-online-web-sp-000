@@ -14,5 +14,15 @@ class App < Sinatra::Base
   end
 
   # Code your final two routes here:
+  get '/goodbye/:name' do
+    # needs to get 200 Code
+    # display a 'goodbye' and a name
+    # is not hard-coded
+  end
 
+  get '/multiply/:num1/:num2' do
+    # gets a 200 status Code
+    # displays the product of the two numbers in the route
+    # is not hard-coded
+  end
 end
