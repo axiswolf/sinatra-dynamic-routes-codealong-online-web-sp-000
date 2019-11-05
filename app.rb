@@ -18,7 +18,8 @@ class App < Sinatra::Base
     # needs to get 200 Code
     # display a 'goodbye' and a name
     # is not hard-coded
-    erb :goodbye
+    #@user_name = params[:name]
+    "Goodbye #{@user_name}"
   end
 
   get '/multiply/:num1/:num2' do
