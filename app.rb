@@ -18,7 +18,7 @@ class App < Sinatra::Base
     # needs to get 200 Code
     # display a 'goodbye' and a name
     # is not hard-coded
-    #@user_name = params[:name]
+    @user_name = params[:name]
     "Goodbye #{@user_name}"
   end
 
