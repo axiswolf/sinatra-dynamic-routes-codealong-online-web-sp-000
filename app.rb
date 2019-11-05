@@ -26,6 +26,8 @@ class App < Sinatra::Base
     # gets a 200 status Code
     # displays the product of the two numbers in the route
     # is not hard-coded
-    erb :multiply
+    @num1 = params[:num1]
+    @num2 = params[:num2]
+    "#{@num1 * @num2}"
   end
 end
